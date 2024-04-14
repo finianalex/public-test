@@ -1,0 +1,196 @@
+/* styles.css */
+
+/* Set the body to display flex and column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of the viewport */
+    margin: 0; /* Reset default margin */
+}
+
+/* Set the main content to flex and grow to push the footer down */
+main {
+    flex-grow: 1; /* Grow to fill the available space */
+    overflow-y: auto; /* Scrollable if content overflows */
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar styles */
+#sidebar {
+    background-color: #343a40 !important; /* Dark background for the sidebar */
+    width: 250px;
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    /* Other styles remain the same */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Scrollable if content overflows */
+    color: #fff; /* White text color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    img{
+        width: 200px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+    }
+    
+}
+
+#sidebar .nav-link {
+    color: #fff !important; /* White text color for links */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-bottom: #fff solid 1px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 15px;
+   
+}
+
+#sidebar .nav-link:hover {
+    color: #4dd0e1 !important; /* Light blue color on hover */
+    transform: translateX(10px); /* Move to the right on hover */
+}
+
+
+
+/* Header styles */
+#header {
+    height: 100px;
+    flex-shrink: 0; /* Prevent the header from shrinking */
+    /* Other styles remain the same */
+    color: #333; /* Dark text color */
+}
+
+/* Search container styles */
+.search-container {
+    flex-grow: 1; /* 讓搜索容器在 header 中間擴展 */
+    max-width: 500px; /* 最大寬度，可根據需要調整 */
+    margin: 0 20px; /* 兩邊的間距 */
+}
+
+/* Search input styles */
+.search-container .form-control {
+    border: 2px solid #fff; /* 白色邊框 */
+}
+
+/* Search button styles */
+.search-container .btn {
+    border: 2px solid #fff; /* 白色邊框 */
+    background-color: transparent; /* 透明背景 */
+    color: #fff; /* 白色圖標 */
+}
+
+/* Search icon styles */
+.search-container .fa-search {
+    font-size: 1rem; /* 圖標大小 */
+}
+
+/* Footer styles */
+#footer {
+    height: 30px;
+    background-color: #f8f9fa !important; /* Example background color */
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure no gaps between elements */
+.nav-link,
+#header {
+    margin: 0;
+    padding: 0;
+}
+
+#header .time {
+    font-family: 'Courier New', monospace; /* Monospaced font for the clock */
+    font-size: 15px; /* Larger font size */
+}
+.time-box{
+    background-color: #343a40;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.dropdown{
+    background-color: #343a40;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    img{
+        border:solid 1px #333;
+    }
+}
+
+#header .account-name {
+    font-weight: bold; /* Bold font for the account name */
+
+}
+
+.account-name{
+    font-weight: bold; /* 加粗字體 */
+    color: #fff; /* 字體顏色 */
+    font-size: 15px; /* 字體大小 */
+    /* 添加其他你想要的樣式 */
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%; /* Full width on small screens */
+        height: auto;
+    }
+    #header {
+        height: auto;
+    }
+}
+/* 社群連結樣式 */
+.social-links {
+    padding: 1rem; /* 添加一些內邊距 */
+    margin-top: 60%;
+    margin-left: 14%;
+    width: 200px;
+    
+}
+
+.social-links a {
+    color: #bdb6b6; /* 設置圖標顏色 */
+    transition: color 0.3s ease; /* 添加顏色變化的過渡效果 */
+    
+}
+
+.social-links a:hover {
+    color: #434040; /* 滑鼠懸停時的顏色 */
+}
+
+.social-link .fa-facebook-square,
+.social-link .fa-twitter-square,
+.social-link .fa-linkedin {
+    font-size: 35px; /* 設置圖標大小為 24px */
+}
+
+/* Course card styles */
+.card {
+    height: 320px;
+    width: 250px;
+    margin: 10px; /* Remove gaps between cards */
+    img{
+        height: 180px;
+    };
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%; /* Full width on small screens */
+        height: auto;
+    }
+    #header {
+        height: auto;
+    }
+}
